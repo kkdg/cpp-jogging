@@ -15,8 +15,10 @@ void Rectangle::set_values (int x, int y) {
 }
 
 int main() {
-	Rectangle rect; 
+	Rectangle rect, rectb; 
 	rect.set_values(3,4);
+	rectb.set_values(5,6);
 	cout << "area : " << rect.area() << endl;
+	cout << "area : " << rectb.area() << endl;
 	return 0;
 }
