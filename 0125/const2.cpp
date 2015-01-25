@@ -6,6 +6,7 @@ class MyClass {
     public:
 	MyClass(int val) : x(val) {}
 	const int& get() const { return x; }
+	int& get() { return x; }
 };
 
 void print (const MyClass& arg) {
@@ -14,7 +15,11 @@ void print (const MyClass& arg) {
 
 int main() {
 	MyClass foo(10);
-	print(foo);
+	const MyClass bar(20);
+	foo.get() = 15;
+	//print(foo);
+	cout << foo.get() << endl;
+	cout << bar.get() << endl;
 
 	return 0;
 }
