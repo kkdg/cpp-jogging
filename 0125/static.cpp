@@ -4,10 +4,11 @@ using namespace std;
 class Dummy {
     public:
 	static int n;
-	Dummy () { n++; };
+	Dummy();
 	~Dummy () { n--; };
 };
 
+Dummy::Dummy() { n++; }
 int Dummy::n=0;
 
 int main() {
