@@ -11,3 +11,8 @@ class myPair {
 		values[1]=second;
 	}
 };
+
+int main() {
+
+	return 0;
+}
